@@ -7,6 +7,7 @@
     <!-- set the page title -->
     <title>LemanHouse - Real Estate HTML Template</title>
     <!-- include google roboto font cdn link -->
+    <link rel="stylesheet" href="../style/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i"
       rel="stylesheet"
@@ -20,100 +21,42 @@
   </head>
   <body>
     <!-- pageWrapper -->
+    <!-- navbar  -->
+    <div class="nav-bar">
+      <a href="../index.html">
+        <div class="logo-container">
+          <img src="../assets/logo.png" alt="logo" class="nav-logo" />
+          <p>Fleetio</p>
+        </div>
+      </a>
+
+        <svg class="mobile-nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+
+      <div class="nav-taxt-main">
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="#">About Us</a></p>
+        <div class="nav-service-container">
+          <p ><a href="#">Services</a></p>
+          <div class="nav-dropdown-container" id="nav-dropdown-id" >
+            <p><a href="../klenar/service.html">Cleaning Service</a></p>
+            <p><a href="#">Car Rental</a></p>
+            <p><a href="../lemanhouse/home.html">Real Estate</a></p>
+          </div>
+        </div>
+        <p><a href="#">Pricing</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+    </div>
+    <!-- navbar  -->
     <div id="pageWrapper">
       <!-- pageMenuPushWrap -->
       <div class="pageMenuPushWrap pageMenuPushWrap2">
         <!-- bgBaseWrap -->
         <div class="bgBaseWrap">
           <!-- pageHeader -->
-          <header id="pageHeader" class="headerAbsolute">
-            <!-- headerAbsoluteHolder -->
-            <div class="headerAbsoluteHolder clearfix">
-              <!-- logo -->
-              <div class="logo">
-                <a href="home.html">
-                  <img
-                    src="images/logo.png"
-                    style="height: 50px"
-                    alt="LemanHouse real estate"
-                  />
-                  <span style="font-size: 26px; font-weight: bold">
-                    Fleetio
-                  </span>
-                </a>
-              </div>
-
-              <!-- pageNav -->
-              <nav
-                id="pageNav"
-                class="navbar navbar-default navTransparent pageNav2"
-              >
-                <!-- navbar collapse -->
-                <div
-                  class="collapse navbar-collapse"
-                  id="bs-example-navbar-collapse-1"
-                >
-                  <div class="navigation-wrapper">
-                    <strong
-                      class="h elemenBlock h4 textWhite text-center menuTitle fontNeuron hidden-wiii hidden-wiv"
-                      id="menu-title"
-                      >Menu</strong
-                    >
-                    <!-- pageMainNav -->
-                    <ul
-                      class="nav navbar-nav pageMainNav transparentWhite pageMainNav2"
-                    >
-                      <li class="active dropdown">
-                        <a href="#" class="dropdown-toggle"
-                          >Home
-                        </a>
-                        
-                      </li>
-                      <!-- remove dropdownFull class when its just regular dropdown -->
-                      <li class="dropdown dropdownFull">
-                        <a href="properties-list.html" class="dropdown-toggle"
-                          >Properties </a>
-                        
-                      </li>
-                      <li><a href="about.html">About</a></li>
-                      
-                      <li>
-                        <a href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- userOptions -->
-                <div class="userOptions userOptions2 align-center">
-                  <!-- headerSearchForm -->
-                  
-                
-              
-                  <!-- headerModalOpener -->
-                  <a
-                    href="#"
-                    class="headerModalOpener transparentWhite text-uppercase fontNeuron fwBold noShrink hidden-xs"
-                    ><i class="openerIcon"></i> Submit Property</a
-                  >
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                    <button
-                      type="button"
-                      class="navbar-toggle collapsed"
-                      data-toggle="collapse"
-                      data-target="#bs-example-navbar-collapse-1"
-                      aria-expanded="false"
-                    >
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </header>
+         
           <!-- main -->
           <main class="bgWhite">
             <!-- introBanner -->
