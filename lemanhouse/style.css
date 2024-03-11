@@ -5914,7 +5914,7 @@ h6 a:active, .h6 a:hover, .h6 a:focus, .h6 a:active {
 /* bgBaseWrap styles */
 @media (min-width: 1200px) {
   .bgBaseWrap {
-    margin-bottom: 558px;
+ 
     position: relative;
     z-index: 2;
     background-color: #f0f9fb;
@@ -5923,7 +5923,7 @@ h6 a:active, .h6 a:hover, .h6 a:focus, .h6 a:active {
 
 @media (min-width: 1200px) {
   .bgBaseWrap.bgBaseWrap2 {
-    margin-bottom: 418px;
+
   }
 }
 

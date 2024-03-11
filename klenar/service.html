@@ -1,630 +1,1004 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Klenar - Cleaning Service HTML5 Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style/style.css" />
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/custom-animation.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/venobox.min.css">
-    <link rel="stylesheet" href="assets/css/backToTop.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-animation.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/venobox.min.css" />
+    <link rel="stylesheet" href="assets/css/backToTop.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-<body>
-     <!-- navbar  -->
-     <div class="nav-bar">
-        <a href="../index.html">
-          <div class="logo-container">
-            <img src="../assets/logo.png" alt="logo" class="nav-logo" />
-            <p style="color: white;">Fleetio</p>
-          </div>
-        </a>
-  
-          <svg class="mobile-nav" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
-          </svg>
-  
-        <div class="nav-taxt-main">
-          <p><a href="../index.html">Home</a></p>
-          <p><a href="#">About Us</a></p>
-          <div class="nav-service-container">
-            <p ><a href="#">Services</a></p>
-            <div class="nav-dropdown-container" id="nav-dropdown-id" >
-              <p><a href="../klenar/service.html">Cleaning Service</a></p>
-              <p><a href="#">Car Rental</a></p>
-              <p><a href="../lemanhouse/home.html">Real Estate</a></p>
-            </div>
-          </div>
-          <p><a href="#">Pricing</a></p>
-          <p><a href="#">Contact</a></p>
+  <body>
+    <!-- navbar  -->
+    <div class="nav-bar">
+      <a href="../index.html">
+        <div class="logo-container">
+          <img src="../assets/logo.jpg" alt="logo" class="nav-logo" />
+          <p>Fleetio</p>
         </div>
+      </a>
+
+      <svg
+        onclick="mobNavFun()"
+        class="mobile-nav"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"
+        ></path>
+      </svg>
+
+      <div class="nav-taxt-main">
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="#">About Us</a></p>
+        <div class="nav-service-container">
+          <div class="service-container" onclick="serviceFun()">
+            <p><a href="#">Services</a></p>
+            <svg
+              aria-hidden="true"
+              class="services-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              ></path>
+            </svg>
+          </div>
+          <div class="nav-dropdown-container" id="nav-dropdown-id">
+            <p><a href="#">Cleaning Service</a></p>
+            <p><a href="../Rentaly HTML/index.html">Car Rental</a></p>
+            <p><a href="../lemanhouse/home.html">Real Estate</a></p>
+          </div>
+        </div>
+        <p><a href="#">Pricing</a></p>
+        <p><a href="#">Contact</a></p>
       </div>
-      <!-- navbar  -->
+      <div class="mob-nav-container" id="mob-nav-container-id">
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="#">About</a></p>
+        <div class="mob-nav-service-container">
+          <div class="mob-service-container" onclick="mobServiceFun()">
+            <p>Services</p>
+            <svg
+              aria-hidden="true"
+              class="mob-services-down-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="mob-nav-dropdown-container" id="mob-nav-dropdown-id">
+            <p><a href="#">Cleaning Service</a></p>
+            <p><a href="../Rentaly HTML/index.html">Car Rental</a></p>
+            <p><a href="../lemanhouse/home.html">Real Estate</a></p>
+          </div>
+        </div>
+        <p><a href="#">Pricing</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+    </div>
+    <!-- navbar  -->
 
     <!-- preloader -->
     <div id="preloader">
-        <div class="preloader">
-            <span></span>
-            <span></span>
-        </div>
+      <div class="preloader">
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <!-- preloader end  -->
 
     <!-- back to top start -->
     <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
     </div>
     <!-- back to top end -->
 
-  
-
     <!-- mobile menu info -->
     <div class="fix">
-        <div class="side-info">
-            <button class="side-info-close"><i class="fal fa-times"></i></button>
-            <div class="side-info-content">
-                <div class="tp-mobile-menu"></div>
-                <div class="contact-infos mb-30">
-                    <div class="contact-list mb-30">
-                        <h4>Contact Info</h4>
-                        <ul>
-                            <li><i class="flaticon-pin"></i>28/4 Palmal, London</li>
-                            <li><i class="flaticon-email"></i><a href="mailto:info@klenar.com">info@klenar.com</a></li>
-                            <li><i class="flaticon-phone-call"></i><a href="tel:33388820055">333 888 200 - 55</a></li>
-                        </ul>
-                        <div class="sidebar__menu--social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-google"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="side-info">
+        <button class="side-info-close"><i class="fal fa-times"></i></button>
+        <div class="side-info-content">
+          <div class="tp-mobile-menu"></div>
+          <div class="contact-infos mb-30">
+            <div class="contact-list mb-30">
+              <h4>Contact Info</h4>
+              <ul>
+                <li><i class="flaticon-pin"></i>28/4 Palmal, London</li>
+                <li>
+                  <i class="flaticon-email"></i
+                  ><a href="mailto:info@klenar.com">info@klenar.com</a>
+                </li>
+                <li>
+                  <i class="flaticon-phone-call"></i
+                  ><a href="tel:33388820055">333 888 200 - 55</a>
+                </li>
+              </ul>
+              <div class="sidebar__menu--social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="offcanvas-overlay"></div>
     <!-- mobile menu info -->
 
     <main>
-        <!-- breadcrumb area start -->
-        <div class="tp-page-title-area pt-180 pb-185 position-relative fix" data-background="assets/img/slider/breadcrumb-bg-1.jpg">
-            <div class="tp-custom-container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tp-page-title z-index">
-                            <h2 class="breadcrumb-title">Our <span>Services</span></h2>
-                            <div class="breadcrumb-menu">
-                                <nav class="breadcrumb-trail breadcrumbs">
-                                    <ul class="trail-items">
-                                        <li class="trail-item trail-begin"><a href="index.html">Home</a>
-                                        </li>
-                                        <li class="trail-item trail-end"><span>Services</span></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
+      <!-- breadcrumb area start -->
+      <div
+        class="tp-page-title-area pt-180 pb-185 position-relative fix"
+        data-background="https://media.istockphoto.com/id/1433923860/photo/concept-of-cleaning-service-during-the-new-year-holidays.webp?b=1&s=170667a&w=0&k=20&c=f3xfsyzCTlRk-vgACpkSC44kDsQaDy9mB7OZ2FX3tsQ="
+      >
+        <div class="tp-custom-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="tp-page-title z-index">
+                <h2 class="breadcrumb-title">Our <span>Services</span></h2>
+                <div class="breadcrumb-menu">
+                  <nav class="breadcrumb-trail breadcrumbs">
+                    <ul class="trail-items">
+                      <li class="trail-item trail-begin">
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li class="trail-item trail-end">
+                        <span>Services</span>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- breadcrumb area end -->
+      </div>
+      <!-- breadcrumb area end -->
 
-        <!-- service area start here -->
-        <section class="tp-service-area-three pt-120 pb-90">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title-wrapper text-center mb-55 wow fadeInUp" data-wow-delay=".3s">
-                            <h5 class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black">Our Best Services</h5>
-                            <h2 class="tp-section-title heading-color-black">Quality Cleaning Making <br>you Much Happy</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="tp-service-three tp-service-four mb-30 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="tp-service-three-img">
-                                <img src="assets/img/service/service-9.jpg" class="img-fluid" alt="img-not-found">
-                                <div class="tp-service-three-img-icon">
-                                    <i class="flaticon-house-cleaning"></i>
-                                </div>
-                                <div class="tp-service-three-img-overlay">
-                                    <div class="tp-service-three-img-overlay-icon">
-                                        <i class="flaticon-house-cleaning"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tp-service-three-text fix">
-                                <h4 class="tp-service-three-title mb-20 heading-color-black-with-hover"><a href="service-details.html">House Cleaning</a></h4>
-                                <p class="mb-30">Buscipit tincidunt duis antino gravidia nam tellusy nascetur neque vulpuits aenean is scelerisque ultrces muscle mass and matter order commo</p>
-                                <div class="tp-service-three-text-btn">
-                                    <a href="service-details.html" class="yellow-btn"><i class="flaticon-enter"></i> Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="tp-service-three tp-service-four mb-30 wow fadeInUp" data-wow-delay=".9s">
-                            <div class="tp-service-three-img">
-                                <img src="assets/img/service/service-10.jpg" class="img-fluid" alt="img-not-found">
-                                <div class="tp-service-three-img-icon">
-                                    <i class="flaticon-cleaning"></i>
-                                </div>
-                                <div class="tp-service-three-img-overlay">
-                                    <div class="tp-service-three-img-overlay-icon">
-                                        <i class="flaticon-cleaning"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tp-service-three-text fix">
-                                <h4 class="tp-service-three-title mb-20 heading-color-black-with-hover"><a href="service-details.html">Hospital Cleaning</a></h4>
-                                <p class="mb-30">Buscipit tincidunt duis antino gravidia nam tellusy nascetur neque vulpuits aenean is scelerisque ultrces muscle mass and matter order commo</p>
-                                <div class="tp-service-three-text-btn">
-                                    <a href="service-details.html" class="yellow-btn"><i class="flaticon-enter"></i> Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="tp-service-three tp-service-four mb-30 wow fadeInUp" data-wow-delay="1.2s">
-                            <div class="tp-service-three-img">
-                                <img src="assets/img/service/service-11.jpg" class="img-fluid" alt="img-not-found">
-                                <div class="tp-service-three-img-icon">
-                                    <i class="flaticon-pot"></i>
-                                </div>
-                                <div class="tp-service-three-img-overlay">
-                                    <div class="tp-service-three-img-overlay-icon">
-                                        <i class="flaticon-pot"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tp-service-three-text fix">
-                                <h4 class="tp-service-three-title mb-20 heading-color-black-with-hover"><a href="service-details.html">Kitchen Cleaning</a></h4>
-                                <p class="mb-30">Buscipit tincidunt duis antino gravidia nam tellusy nascetur neque vulpuits aenean is scelerisque ultrces muscle mass and matter order commo</p>
-                                <div class="tp-service-three-text-btn">
-                                    <a href="service-details.html" class="yellow-btn"><i class="flaticon-enter"></i> Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="tp-service-three tp-service-four tp-services-three mb-30 wow fadeInUp" data-wow-delay="1.5s">
-                            <div class="tp-service-three-img">
-                                <img src="assets/img/service/service-12.jpg" class="img-fluid" alt="img-not-found">
-                                <div class="tp-service-three-img-icon">
-                                    <i class="flaticon-window"></i>
-                                </div>
-                                <div class="tp-service-three-img-overlay">
-                                    <div class="tp-service-three-img-overlay-icon">
-                                        <i class="flaticon-window"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tp-service-three-text fix">
-                                <h4 class="tp-service-three-title mb-20 heading-color-black-with-hover"><a href="service-details.html">Window Cleaning</a></h4>
-                                <p class="mb-30">Buscipit tincidunt duis antino gravidia nam tellusy nascetur neque vulpuits aenean is scelerisque ultrces muscle mass and matter order commo</p>
-                                <div class="tp-service-three-text-btn">
-                                    <a href="service-details.html" class="yellow-btn"><i class="flaticon-enter"></i> Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="tp-service-three tp-service-four tp-services-three mb-30 wow fadeInUp" data-wow-delay="1.8s">
-                            <div class="tp-service-three-img">
-                                <img src="assets/img/service/service-13.jpg" class="img-fluid" alt="img-not-found">
-                                <div class="tp-service-three-img-icon">
-                                    <i class="flaticon-desk"></i>
-                                </div>
-                                <div class="tp-service-three-img-overlay">
-                                    <div class="tp-service-three-img-overlay-icon">
-                                        <i class="flaticon-desk"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tp-service-three-text fix">
-                                <h4 class="tp-service-three-title mb-20 heading-color-black-with-hover"><a href="service-details.html">Office Cleaning</a></h4>
-                                <p class="mb-30">Buscipit tincidunt duis antino gravidia nam tellusy nascetur neque vulpuits aenean is scelerisque ultrces muscle mass and matter order commo</p>
-                                <div class="tp-service-three-text-btn">
-                                    <a href="service-details.html" class="yellow-btn"><i class="flaticon-enter"></i> Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="tp-service-three tp-service-four tp-services-three mb-30 wow fadeInUp" data-wow-delay="2s">
-                            <div class="tp-service-three-img">
-                                <img src="assets/img/service/service-14.jpg" class="img-fluid" alt="img-not-found">
-                                <div class="tp-service-three-img-icon">
-                                    <i class="flaticon-vacuum-cleaner"></i>
-                                </div>
-                                <div class="tp-service-three-img-overlay">
-                                    <div class="tp-service-three-img-overlay-icon">
-                                        <i class="flaticon-vacuum-cleaner"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tp-service-three-text fix">
-                                <h4 class="tp-service-three-title mb-20 heading-color-black-with-hover"><a href="service-details.html">Carpet Cleaning</a></h4>
-                                <p class="mb-30">Buscipit tincidunt duis antino gravidia nam tellusy nascetur neque vulpuits aenean is scelerisque ultrces muscle mass and matter order commo</p>
-                                <div class="tp-service-three-text-btn">
-                                    <a href="service-details.html" class="yellow-btn"><i class="flaticon-enter"></i> Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- service area start here -->
+      <section class="tp-service-area-three pt-120 pb-90">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="section-title-wrapper text-center mb-55 wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                <h5
+                  class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black"
+                >
+                  Our Best Services
+                </h5>
+                <h2 class="tp-section-title heading-color-black">
+                  Quality Cleaning Making <br />you Much Happy
+                </h2>
+              </div>
             </div>
-        </section>
-        <!-- service area end here -->
-
-        <!-- testimonial area start here -->
-        <section class="tp-testimonial-area-two tp-testimonial-area-four position-relative">
-            <div class="tp-testimonial-area-two-shape"></div>
-            <div class="container position-relative">
-                <div class="tp-testimonial-title-wrapper pt-120">
-                    <h5 class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black">Our Popular Services</h5>
-                    <h2 class="tp-section-title heading-color-black">Customer Says About <br>Our Service</h2>
-                </div>
-            </div>
-            <div class="tp-testimonial-divide">
-                <div class="tp-testimonial-two-wrapper z-index">
-                    <div class="tp-testimonial-two-active swiper-container common-dots pb-40">
-                        <div class="swiper-wrapper">
-                            <div class="tp-testimonial-two position-relative swiper-slide mb-30">
-                                <div class="tp-testimonial-two-author mb-20">
-                                    <div class="tp-testimonial-two-author-img">
-                                        <img src="assets/img/testimonial/author-2.png" class="img-fluid" alt="img not found">
-                                    </div>
-                                    <div class="tp-testimonial-two-author-text">
-                                        <span>Senior Designer</span>
-                                        <h4 class="tp-testimonial-two-name">Petar Mansion</h4>
-                                    </div>
-                                </div>
-                                <p>Hymenaeos rhoncus proin aliquam justo sum mauris rutrum nulam semper purus rutru non sociis 
-                                    libero varius cumer to duine felis enisa porta ridiculus nisl acequis. </p>
-                                <div class="tp-testimonial-two-qoute">
-                                    <i class="fal fa-quote-left"></i>
-                                </div>
-                            </div>
-                            <div class="tp-testimonial-two position-relative swiper-slide mb-30">
-                                <div class="tp-testimonial-two-author mb-20">
-                                    <div class="tp-testimonial-two-author-img">
-                                        <img src="assets/img/testimonial/author-3.png" class="img-fluid" alt="img not found">
-                                    </div>
-                                    <div class="tp-testimonial-two-author-text">
-                                        <span>Wp Developer</span>
-                                        <h4 class="tp-testimonial-two-name">Broad Richard</h4>
-                                    </div>
-                                </div>
-                                <p>Hymenaeos rhoncus proin aliquam justo sum mauris rutrum nulam semper purus rutru non sociis 
-                                    libero varius cumer to duine felis enisa porta ridiculus nisl acequis. </p>
-                                <div class="tp-testimonial-two-qoute">
-                                    <i class="fal fa-quote-left"></i>
-                                </div>
-                            </div>
-                            <div class="tp-testimonial-two position-relative swiper-slide mb-30">
-                                <div class="tp-testimonial-two-author mb-20">
-                                    <div class="tp-testimonial-two-author-img">
-                                        <img src="assets/img/testimonial/author-2.png" class="img-fluid" alt="img not found">
-                                    </div>
-                                    <div class="tp-testimonial-two-author-text">
-                                        <span>Senior Developer</span>
-                                        <h4 class="tp-testimonial-two-name">Jhon Doe</h4>
-                                    </div>
-                                </div>
-                                <p>Hymenaeos rhoncus proin aliquam justo sum mauris rutrum nulam semper purus rutru non sociis 
-                                    libero varius cumer to duine felis enisa porta ridiculus nisl acequis. </p>
-                                <div class="tp-testimonial-two-qoute">
-                                    <i class="fal fa-quote-left"></i>
-                                </div>
-                            </div>
-                            <div class="tp-testimonial-two position-relative swiper-slide mb-30">
-                                <div class="tp-testimonial-two-author mb-20">
-                                    <div class="tp-testimonial-two-author-img">
-                                        <img src="assets/img/testimonial/author-3.png" class="img-fluid" alt="img not found">
-                                    </div>
-                                    <div class="tp-testimonial-two-author-text">
-                                        <span>Senior Designer</span>
-                                        <h4 class="tp-testimonial-two-name">Shane Watson</h4>
-                                    </div>
-                                </div>
-                                <p>Hymenaeos rhoncus proin aliquam justo sum mauris rutrum nulam semper purus rutru non sociis 
-                                    libero varius cumer to duine felis enisa porta ridiculus nisl acequis. </p>
-                                <div class="tp-testimonial-two-qoute">
-                                    <i class="fal fa-quote-left"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination-testimonial slide-dots "></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="tp-service-three tp-service-four mb-30 wow fadeInUp"
+                data-wow-delay=".6s"
+              >
+                <div class="tp-service-three-img">
+                  <img
+                    src="https://media.istockphoto.com/id/590277932/photo/nothing-is-better-than-team-work.jpg?s=612x612&w=0&k=20&c=ZU5PmR6RXaTp4PgwfUTmOuTJw00gLQ8PRGUQGRSzwbE="
+                    class="img-fluid"
+                    alt="img-not-found"
+                  />
+                  <div class="tp-service-three-img-icon">
+                    <i class="flaticon-house-cleaning"></i>
+                  </div>
+                  <div class="tp-service-three-img-overlay">
+                    <div class="tp-service-three-img-overlay-icon">
+                      <i class="flaticon-house-cleaning"></i>
                     </div>
+                  </div>
                 </div>
-                <div class="tp-testimonial-two-form tp-testimonial-two-form-four pt-120 z-index" data-background="assets/img/testimonial/testimonial-img-4.jpg">
-                    <form action="#" class="text-start tp-testimonial-two-form-wrapper">
-                        <h3 class="tp-testimonial-form-title"><span>Free</span> Estimate</h3>
-                        <p class="mb-30">Free know your project estimate and recent offer</p>
-                        <div class="input-field mb-15">
-                            <input type="text" placeholder="Your Name">
-                        </div>
-                        <div class="input-field mb-15">
-                            <input type="text" placeholder="Your Name">
-                        </div>
-                        <div class="input-field select-field-arrow mb-15">
-                            <select>
-                                <option value="">Choose Service</option>
-                                <option value="">House Cleaning</option>
-                                <option value="">Office Cleaning</option>
-                                <option value="">Kitchen Cleaning</option>
-                                <option value="">Club Cleaning</option>
-                            </select>
-                        </div>
-                        <div class="input-field mb-15">
-                            <textarea placeholder="Write Message"></textarea>
-                        </div>
-                        <div class="input-field">
-                            <button type="submit" class="yellow-btn">Free Estimate +</button>
-                        </div>
-                    </form>
+                <div class="tp-service-three-text fix">
+                  <h4
+                    class="tp-service-three-title mb-20 heading-color-black-with-hover"
+                  >
+                    <a href="service-details.html">House Cleaning</a>
+                  </h4>
+                  <p class="mb-30">
+                    Buscipit tincidunt duis antino gravidia nam tellusy nascetur
+                    neque vulpuits aenean is scelerisque ultrces muscle mass and
+                    matter order commo
+                  </p>
+                  <div class="tp-service-three-text-btn">
+                    <a href="service-details.html" class="yellow-btn"
+                      ><i class="flaticon-enter"></i> Learn More</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- testimonial area end here -->
-
-        <!-- brand area start here -->
-        <div class="brand-area theme-dark-bg pt-100 pb-100">
-            <div class="container">
-                <div class="brand-active-two swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="brand-wrapper-two text-center swiper-slide wow fadeInUp" data-wow-delay=".3s" data-swiper-autoplay="5000">
-                            <a href="#"><img src="assets/img/brand/brand-1.png" class="img-fluid" alt="img"></a>
-                        </div>
-                        <div class="brand-wrapper-two text-center swiper-slide wow fadeInUp" data-wow-delay=".6s" data-swiper-autoplay="5000">
-                            <a href="#"><img src="assets/img/brand/brand-2.png" class="img-fluid" alt="img"></a>
-                        </div>
-                        <div class="brand-wrapper-two text-center swiper-slide wow fadeInUp" data-wow-delay=".9s" data-swiper-autoplay="5000">
-                            <a href="#"><img src="assets/img/brand/brand-3.png" class="img-fluid" alt="img"></a>
-                        </div>
-                        <div class="brand-wrapper-two text-center swiper-slide wow fadeInUp" data-wow-delay="1.2s" data-swiper-autoplay="5000">
-                            <a href="#"><img src="assets/img/brand/brand-4.png" class="img-fluid" alt="img"></a>
-                        </div>
-                        <div class="brand-wrapper-two text-center swiper-slide wow fadeInUp" data-wow-delay="1.5s" data-swiper-autoplay="5000">
-                            <a href="#"><img src="assets/img/brand/brand-5.png" class="img-fluid" alt="img"></a>
-                        </div>
-                        <div class="brand-wrapper-two text-center swiper-slide wow fadeInUp" data-wow-delay="1.8s" data-swiper-autoplay="5000">
-                            <a href="#"><img src="assets/img/brand/brand-1.png" class="img-fluid" alt="img"></a>
-                        </div>
+            <div class="col-lg-6">
+              <div
+                class="tp-service-three tp-service-four mb-30 wow fadeInUp"
+                data-wow-delay=".9s"
+              >
+                <div class="tp-service-three-img">
+                  <img
+                    src="https://media.istockphoto.com/id/1219371167/photo/floor-care-and-cleaning-services-with-washing-mop-in-sterile-factory-or-clean-hospital.jpg?s=612x612&w=0&k=20&c=nvvnyR21fgnpMQ1rBaBaGQW9ORTZ7txnupFnIECJwAg="
+                    class="img-fluid"
+                    alt="img-not-found"
+                  />
+                  <div class="tp-service-three-img-icon">
+                    <i class="flaticon-cleaning"></i>
+                  </div>
+                  <div class="tp-service-three-img-overlay">
+                    <div class="tp-service-three-img-overlay-icon">
+                      <i class="flaticon-cleaning"></i>
                     </div>
+                  </div>
                 </div>
+                <div class="tp-service-three-text fix">
+                  <h4
+                    class="tp-service-three-title mb-20 heading-color-black-with-hover"
+                  >
+                    <a href="service-details.html">Hospital Cleaning</a>
+                  </h4>
+                  <p class="mb-30">
+                    Buscipit tincidunt duis antino gravidia nam tellusy nascetur
+                    neque vulpuits aenean is scelerisque ultrces muscle mass and
+                    matter order commo
+                  </p>
+                  <div class="tp-service-three-text-btn">
+                    <a href="service-details.html" class="yellow-btn"
+                      ><i class="flaticon-enter"></i> Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-6">
+              <div
+                class="tp-service-three tp-service-four mb-30 wow fadeInUp"
+                data-wow-delay="1.2s"
+              >
+                <div class="tp-service-three-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/young-woman-cleaning-kitchen-furniture-rubber-gloves_651396-2883.jpg"
+                    class="img-fluid"
+                    alt="img-not-found"
+                  />
+                  <div class="tp-service-three-img-icon">
+                    <i class="flaticon-pot"></i>
+                  </div>
+                  <div class="tp-service-three-img-overlay">
+                    <div class="tp-service-three-img-overlay-icon">
+                      <i class="flaticon-pot"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tp-service-three-text fix">
+                  <h4
+                    class="tp-service-three-title mb-20 heading-color-black-with-hover"
+                  >
+                    <a href="service-details.html">Kitchen Cleaning</a>
+                  </h4>
+                  <p class="mb-30">
+                    Buscipit tincidunt duis antino gravidia nam tellusy nascetur
+                    neque vulpuits aenean is scelerisque ultrces muscle mass and
+                    matter order commo
+                  </p>
+                  <div class="tp-service-three-text-btn">
+                    <a href="service-details.html" class="yellow-btn"
+                      ><i class="flaticon-enter"></i> Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="tp-service-three tp-service-four tp-services-three mb-30 wow fadeInUp"
+                data-wow-delay="1.5s"
+              >
+                <div class="tp-service-three-img">
+                  <img
+                    src="https://media.istockphoto.com/id/1150282133/photo/cleaning-window-pane-with-detergent.jpg?s=612x612&w=0&k=20&c=BkzVas8qZ_VLxLDWpDAPbVSDRXgRFMxbI3_NHcamUfk="
+                    class="img-fluid"
+                    alt="img-not-found"
+                  />
+                  <div class="tp-service-three-img-icon">
+                    <i class="flaticon-window"></i>
+                  </div>
+                  <div class="tp-service-three-img-overlay">
+                    <div class="tp-service-three-img-overlay-icon">
+                      <i class="flaticon-window"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tp-service-three-text fix">
+                  <h4
+                    class="tp-service-three-title mb-20 heading-color-black-with-hover"
+                  >
+                    <a href="service-details.html">Window Cleaning</a>
+                  </h4>
+                  <p class="mb-30">
+                    Buscipit tincidunt duis antino gravidia nam tellusy nascetur
+                    neque vulpuits aenean is scelerisque ultrces muscle mass and
+                    matter order commo
+                  </p>
+                  <div class="tp-service-three-text-btn">
+                    <a href="service-details.html" class="yellow-btn"
+                      ><i class="flaticon-enter"></i> Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div
+                class="tp-service-three tp-service-four tp-services-three mb-30 wow fadeInUp"
+                data-wow-delay="1.8s"
+              >
+                <div class="tp-service-three-img">
+                  <img
+                    src="https://img.freepik.com/premium-photo/young-man-woman-using-detergent-vacuum-cleaner-cleaning-openspace-office_274679-35143.jpg"
+                    class="img-fluid"
+                    alt="img-not-found"
+                  />
+                  <div class="tp-service-three-img-icon">
+                    <i class="flaticon-desk"></i>
+                  </div>
+                  <div class="tp-service-three-img-overlay">
+                    <div class="tp-service-three-img-overlay-icon">
+                      <i class="flaticon-desk"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tp-service-three-text fix">
+                  <h4
+                    class="tp-service-three-title mb-20 heading-color-black-with-hover"
+                  >
+                    <a href="service-details.html">Office Cleaning</a>
+                  </h4>
+                  <p class="mb-30">
+                    Buscipit tincidunt duis antino gravidia nam tellusy nascetur
+                    neque vulpuits aenean is scelerisque ultrces muscle mass and
+                    matter order commo
+                  </p>
+                  <div class="tp-service-three-text-btn">
+                    <a href="service-details.html" class="yellow-btn"
+                      ><i class="flaticon-enter"></i> Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="tp-service-three tp-service-four tp-services-three mb-30 wow fadeInUp"
+                data-wow-delay="2s"
+              >
+                <div class="tp-service-three-img">
+                  <img
+                    src="https://media.istockphoto.com/id/832990938/photo/person-cleaning-carpet-with-vacuum-cleaner.jpg?s=612x612&w=0&k=20&c=M2PuEJzJ3xOCTlgl-UwkXizizV1946ghxWBD2VH_Fb0="
+                    class="img-fluid"
+                    alt="img-not-found"
+                  />
+                  <div class="tp-service-three-img-icon">
+                    <i class="flaticon-vacuum-cleaner"></i>
+                  </div>
+                  <div class="tp-service-three-img-overlay">
+                    <div class="tp-service-three-img-overlay-icon">
+                      <i class="flaticon-vacuum-cleaner"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="tp-service-three-text fix">
+                  <h4
+                    class="tp-service-three-title mb-20 heading-color-black-with-hover"
+                  >
+                    <a href="service-details.html">Carpet Cleaning</a>
+                  </h4>
+                  <p class="mb-30">
+                    Buscipit tincidunt duis antino gravidia nam tellusy nascetur
+                    neque vulpuits aenean is scelerisque ultrces muscle mass and
+                    matter order commo
+                  </p>
+                  <div class="tp-service-three-text-btn">
+                    <a href="service-details.html" class="yellow-btn"
+                      ><i class="flaticon-enter"></i> Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- brand area end here -->
+      </section>
+      <!-- service area end here -->
 
-        <!-- pricing area start here -->
-        <section class="tp-pricing-area pt-120 pb-90">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-12">
-                        <div class="section-title-wrapper text-center mb-55 wow fadeInUp" data-wow-delay=".2s">
-                            <h5 class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black">Our Affordable Package</h5>
-                            <h2 class="tp-section-title heading-color-black">Special Pricing Package <br>No Hidden Charge</h2>
-                        </div>
+      <!-- testimonial area start here -->
+      <section
+        class="tp-testimonial-area-two tp-testimonial-area-four position-relative"
+      >
+        <div class="tp-testimonial-area-two-shape"></div>
+        <div class="container position-relative">
+          <div class="tp-testimonial-title-wrapper pt-120">
+            <h5
+              class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black"
+            >
+              Our Popular Services
+            </h5>
+            <h2 class="tp-section-title heading-color-black">
+              Customer Says About <br />Our Service
+            </h2>
+          </div>
+        </div>
+        <div class="tp-testimonial-divide">
+          <div class="tp-testimonial-two-wrapper z-index">
+            <div
+              class="tp-testimonial-two-active swiper-container common-dots pb-40"
+            >
+              <div class="swiper-wrapper">
+                <div
+                  class="tp-testimonial-two position-relative swiper-slide mb-30"
+                >
+                  <div class="tp-testimonial-two-author mb-20">
+                    <div class="tp-testimonial-two-author-img">
+                      <img
+                        src="assets/img/testimonial/author-2.png"
+                        class="img-fluid"
+                        alt="img not found"
+                      />
                     </div>
+                    <div class="tp-testimonial-two-author-text">
+                      <span>Senior Designer</span>
+                      <h4 class="tp-testimonial-two-name">Petar Mansion</h4>
+                    </div>
+                  </div>
+                  <p>
+                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
+                    nulam semper purus rutru non sociis libero varius cumer to
+                    duine felis enisa porta ridiculus nisl acequis.
+                  </p>
+                  <div class="tp-testimonial-two-qoute">
+                    <i class="fal fa-quote-left"></i>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-4 col-md-6 mb-30">
-                        <div class="tp-pricing tp-pricings bg-gray-light text-center wow flipInY" data-wow-delay=".2s">
-                            <div class="tp-pricing-icon mb-40">
-                                <div class="tp-pricing-icon-inner">
-                                    <i class="flaticon-mop"></i>
-                                </div>
-                            </div>
-                            <div class="tp-pricing-rate">
-                                <div class="tp-pricing-rate-inner text-center">
-                                    <h4 class="tp-pricing-rate-subtitle mb-30">Residential</h4>
-                                    <h2 class="tp-pricing-rate-title mb-45"><span>$</span>25.00</h2>
-                                </div>
-                            </div>
-                            <div class="tp-pricing-list mb-45">
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Carpet Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Bathroom Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Floor Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Bedroom Cleaning</li>
-                                </ul>
-                            </div>
-                            <div class="tp-pricing-btn">
-                                <a href="pricing.html" class="theme-btn"><i class="flaticon-enter"></i> Get Service</a>
-                            </div>
-                        </div>
+                <div
+                  class="tp-testimonial-two position-relative swiper-slide mb-30"
+                >
+                  <div class="tp-testimonial-two-author mb-20">
+                    <div class="tp-testimonial-two-author-img">
+                      <img
+                        src="assets/img/testimonial/author-3.png"
+                        class="img-fluid"
+                        alt="img not found"
+                      />
                     </div>
-                    <div class="col-xl-4 col-md-6 mb-30">
-                        <div class="tp-pricing tp-pricings bg-gray-light text-center wow flipInY" data-wow-delay=".2s">
-                            <div class="tp-pricing-icon mb-40">
-                                <div class="tp-pricing-icon-inner">
-                                    <i class="flaticon-cleaning-1"></i>
-                                </div>
-                            </div>
-                            <div class="tp-pricing-rate">
-                                <div class="tp-pricing-rate-inner text-center">
-                                    <h4 class="tp-pricing-rate-subtitle mb-30">Buildings</h4>
-                                    <h2 class="tp-pricing-rate-title mb-45"><span>$</span>30.00</h2>
-                                </div>
-                            </div>
-                            <div class="tp-pricing-list mb-45">
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Carpet Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Bathroom Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Floor Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Bedroom Cleaning</li>
-                                </ul>
-                            </div>
-                            <div class="tp-pricing-btn">
-                                <a href="pricing.html" class="theme-btn active"><i class="flaticon-enter"></i> Get Service</a>
-                            </div>
-                        </div>
+                    <div class="tp-testimonial-two-author-text">
+                      <span>Wp Developer</span>
+                      <h4 class="tp-testimonial-two-name">Broad Richard</h4>
                     </div>
-                    <div class="col-xl-4 col-md-6 mb-30">
-                        <div class="tp-pricing tp-pricings bg-gray-light text-center wow flipInY" data-wow-delay=".2s">
-                            <div class="tp-pricing-icon mb-40">
-                                <div class="tp-pricing-icon-inner">
-                                    <i class="flaticon-vacuum-cleaner-1"></i>
-                                </div>
-                            </div>
-                            <div class="tp-pricing-rate">
-                                <div class="tp-pricing-rate-inner text-center">
-                                    <h4 class="tp-pricing-rate-subtitle mb-30">Commercial</h4>
-                                    <h2 class="tp-pricing-rate-title mb-45"><span>$</span>45.00</h2>
-                                </div>
-                            </div>
-                            <div class="tp-pricing-list mb-45">
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Carpet Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Bathroom Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Floor Cleaning</li>
-                                    <li><i class="fas fa-check"></i> Bedroom Cleaning</li>
-                                </ul>
-                            </div>
-                            <div class="tp-pricing-btn">
-                                <a href="pricing.html" class="theme-btn"><i class="flaticon-enter"></i> Get Service</a>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                  <p>
+                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
+                    nulam semper purus rutru non sociis libero varius cumer to
+                    duine felis enisa porta ridiculus nisl acequis.
+                  </p>
+                  <div class="tp-testimonial-two-qoute">
+                    <i class="fal fa-quote-left"></i>
+                  </div>
                 </div>
+                <div
+                  class="tp-testimonial-two position-relative swiper-slide mb-30"
+                >
+                  <div class="tp-testimonial-two-author mb-20">
+                    <div class="tp-testimonial-two-author-img">
+                      <img
+                        src="assets/img/testimonial/author-2.png"
+                        class="img-fluid"
+                        alt="img not found"
+                      />
+                    </div>
+                    <div class="tp-testimonial-two-author-text">
+                      <span>Senior Developer</span>
+                      <h4 class="tp-testimonial-two-name">Jhon Doe</h4>
+                    </div>
+                  </div>
+                  <p>
+                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
+                    nulam semper purus rutru non sociis libero varius cumer to
+                    duine felis enisa porta ridiculus nisl acequis.
+                  </p>
+                  <div class="tp-testimonial-two-qoute">
+                    <i class="fal fa-quote-left"></i>
+                  </div>
+                </div>
+                <div
+                  class="tp-testimonial-two position-relative swiper-slide mb-30"
+                >
+                  <div class="tp-testimonial-two-author mb-20">
+                    <div class="tp-testimonial-two-author-img">
+                      <img
+                        src="assets/img/testimonial/author-3.png"
+                        class="img-fluid"
+                        alt="img not found"
+                      />
+                    </div>
+                    <div class="tp-testimonial-two-author-text">
+                      <span>Senior Designer</span>
+                      <h4 class="tp-testimonial-two-name">Shane Watson</h4>
+                    </div>
+                  </div>
+                  <p>
+                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
+                    nulam semper purus rutru non sociis libero varius cumer to
+                    duine felis enisa porta ridiculus nisl acequis.
+                  </p>
+                  <div class="tp-testimonial-two-qoute">
+                    <i class="fal fa-quote-left"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- If we need pagination -->
+              <div class="swiper-pagination-testimonial slide-dots"></div>
             </div>
-        </section>
-        <!-- pricing area end here -->
-    
+          </div>
+          <div
+            class="tp-testimonial-two-form tp-testimonial-two-form-four pt-120 z-index"
+            data-background="assets/img/testimonial/testimonial-img-4.jpg"
+          >
+            <form action="#" class="text-start tp-testimonial-two-form-wrapper">
+              <h3 class="tp-testimonial-form-title">
+                <span>Free</span> Estimate
+              </h3>
+              <p class="mb-30">
+                Free know your project estimate and recent offer
+              </p>
+              <div class="input-field mb-15">
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div class="input-field mb-15">
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div class="input-field select-field-arrow mb-15">
+                <select>
+                  <option value="">Choose Service</option>
+                  <option value="">House Cleaning</option>
+                  <option value="">Office Cleaning</option>
+                  <option value="">Kitchen Cleaning</option>
+                  <option value="">Club Cleaning</option>
+                </select>
+              </div>
+              <div class="input-field mb-15">
+                <textarea placeholder="Write Message"></textarea>
+              </div>
+              <div class="input-field">
+                <button type="submit" class="yellow-btn">
+                  Free Estimate +
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial area end here -->
+
+      <!-- brand area start here -->
+      <div class="brand-area theme-dark-bg pt-100 pb-100">
+        <div class="container">
+          <div class="brand-active-two swiper-container">
+            <div class="swiper-wrapper">
+              <div
+                class="brand-wrapper-two text-center swiper-slide wow fadeInUp"
+                data-wow-delay=".3s"
+                data-swiper-autoplay="5000"
+              >
+                <a href="#"
+                  ><img
+                    src="assets/img/brand/brand-1.png"
+                    class="img-fluid"
+                    alt="img"
+                /></a>
+              </div>
+              <div
+                class="brand-wrapper-two text-center swiper-slide wow fadeInUp"
+                data-wow-delay=".6s"
+                data-swiper-autoplay="5000"
+              >
+                <a href="#"
+                  ><img
+                    src="assets/img/brand/brand-2.png"
+                    class="img-fluid"
+                    alt="img"
+                /></a>
+              </div>
+              <div
+                class="brand-wrapper-two text-center swiper-slide wow fadeInUp"
+                data-wow-delay=".9s"
+                data-swiper-autoplay="5000"
+              >
+                <a href="#"
+                  ><img
+                    src="assets/img/brand/brand-3.png"
+                    class="img-fluid"
+                    alt="img"
+                /></a>
+              </div>
+              <div
+                class="brand-wrapper-two text-center swiper-slide wow fadeInUp"
+                data-wow-delay="1.2s"
+                data-swiper-autoplay="5000"
+              >
+                <a href="#"
+                  ><img
+                    src="assets/img/brand/brand-4.png"
+                    class="img-fluid"
+                    alt="img"
+                /></a>
+              </div>
+              <div
+                class="brand-wrapper-two text-center swiper-slide wow fadeInUp"
+                data-wow-delay="1.5s"
+                data-swiper-autoplay="5000"
+              >
+                <a href="#"
+                  ><img
+                    src="assets/img/brand/brand-5.png"
+                    class="img-fluid"
+                    alt="img"
+                /></a>
+              </div>
+              <div
+                class="brand-wrapper-two text-center swiper-slide wow fadeInUp"
+                data-wow-delay="1.8s"
+                data-swiper-autoplay="5000"
+              >
+                <a href="#"
+                  ><img
+                    src="assets/img/brand/brand-1.png"
+                    class="img-fluid"
+                    alt="img"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- brand area end here -->
+
+      <!-- pricing area start here -->
+      <section class="tp-pricing-area pt-120 pb-90">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <div
+                class="section-title-wrapper text-center mb-55 wow fadeInUp"
+                data-wow-delay=".2s"
+              >
+                <h5
+                  class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black"
+                >
+                  Our Affordable Package
+                </h5>
+                <h2 class="tp-section-title heading-color-black">
+                  Special Pricing Package <br />No Hidden Charge
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-6 mb-30">
+              <div
+                class="tp-pricing tp-pricings bg-gray-light text-center wow flipInY"
+                data-wow-delay=".2s"
+              >
+                <div class="tp-pricing-icon mb-40">
+                  <div class="tp-pricing-icon-inner">
+                    <i class="flaticon-mop"></i>
+                  </div>
+                </div>
+                <div class="tp-pricing-rate">
+                  <div class="tp-pricing-rate-inner text-center">
+                    <h4 class="tp-pricing-rate-subtitle mb-30">Residential</h4>
+                    <h2 class="tp-pricing-rate-title mb-45">
+                      <span>$</span>25.00
+                    </h2>
+                  </div>
+                </div>
+                <div class="tp-pricing-list mb-45">
+                  <ul>
+                    <li><i class="fas fa-check"></i> Carpet Cleaning</li>
+                    <li><i class="fas fa-check"></i> Bathroom Cleaning</li>
+                    <li><i class="fas fa-check"></i> Floor Cleaning</li>
+                    <li><i class="fas fa-check"></i> Bedroom Cleaning</li>
+                  </ul>
+                </div>
+                <div class="tp-pricing-btn">
+                  <a href="pricing.html" class="theme-btn"
+                    ><i class="flaticon-enter"></i> Get Service</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-30">
+              <div
+                class="tp-pricing tp-pricings bg-gray-light text-center wow flipInY"
+                data-wow-delay=".2s"
+              >
+                <div class="tp-pricing-icon mb-40">
+                  <div class="tp-pricing-icon-inner">
+                    <i class="flaticon-cleaning-1"></i>
+                  </div>
+                </div>
+                <div class="tp-pricing-rate">
+                  <div class="tp-pricing-rate-inner text-center">
+                    <h4 class="tp-pricing-rate-subtitle mb-30">Buildings</h4>
+                    <h2 class="tp-pricing-rate-title mb-45">
+                      <span>$</span>30.00
+                    </h2>
+                  </div>
+                </div>
+                <div class="tp-pricing-list mb-45">
+                  <ul>
+                    <li><i class="fas fa-check"></i> Carpet Cleaning</li>
+                    <li><i class="fas fa-check"></i> Bathroom Cleaning</li>
+                    <li><i class="fas fa-check"></i> Floor Cleaning</li>
+                    <li><i class="fas fa-check"></i> Bedroom Cleaning</li>
+                  </ul>
+                </div>
+                <div class="tp-pricing-btn">
+                  <a href="pricing.html" class="theme-btn active"
+                    ><i class="flaticon-enter"></i> Get Service</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mb-30">
+              <div
+                class="tp-pricing tp-pricings bg-gray-light text-center wow flipInY"
+                data-wow-delay=".2s"
+              >
+                <div class="tp-pricing-icon mb-40">
+                  <div class="tp-pricing-icon-inner">
+                    <i class="flaticon-vacuum-cleaner-1"></i>
+                  </div>
+                </div>
+                <div class="tp-pricing-rate">
+                  <div class="tp-pricing-rate-inner text-center">
+                    <h4 class="tp-pricing-rate-subtitle mb-30">Commercial</h4>
+                    <h2 class="tp-pricing-rate-title mb-45">
+                      <span>$</span>45.00
+                    </h2>
+                  </div>
+                </div>
+                <div class="tp-pricing-list mb-45">
+                  <ul>
+                    <li><i class="fas fa-check"></i> Carpet Cleaning</li>
+                    <li><i class="fas fa-check"></i> Bathroom Cleaning</li>
+                    <li><i class="fas fa-check"></i> Floor Cleaning</li>
+                    <li><i class="fas fa-check"></i> Bedroom Cleaning</li>
+                  </ul>
+                </div>
+                <div class="tp-pricing-btn">
+                  <a href="pricing.html" class="theme-btn"
+                    ><i class="flaticon-enter"></i> Get Service</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- pricing area end here -->
     </main>
 
-    <footer class="theme-dark-bg">
-        <div class="tp-footer-subscribe-area-two position-relative pt-100">
-            <div class="container">
-                <div class="tp-footer-subscribe-bg-two theme-yellow-bg pt-30 pb-20 z-index pl-60 pr-60">
-                    <div class="row align-items-center">
-                        <div class="col-xl-5 col-lg-4">
-                            <div class="tp-footer-subscribe">
-                                <h3 class="tp-footer-subscribe-title">Subscribe Our Newsletter</h3>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-8">
-                            <div class="tp-footer-subscribe-form">
-                                <form action="#" class="p-0">
-                                    <div class="tp-footer-subscribe-form-field mb-10">
-                                        <input type="text" placeholder="Email Address">
-                                        <i class="fal fa-paper-plane"></i>
-                                    </div>
-                                    <div class="tp-footer-subscribe-form-btn mb-10">
-                                        <button type="submit" class="theme-btn"><i class="flaticon-enter"></i> Subscribe</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+    <!-- footer  -->
+    <footer class="footer-container" style="border-top: 0.5px solid gray;">
+        <div class="footer-main">
+            <div class="footer-header-container">
+                <div  class="footer-logo-main">
+                    <a href="https://flowbite.com/" class="footer-header-alink" >
+                        <img src="../assets/logo.jpg" class="footer-logo" alt="FlowBite Logo">
+                        <span  class="footer-heading">
+                            Fleetio
+                        </span>
+                    </a>
+                </div>
+                <div  class="footer-header-text">
+                    <div>
+                        <h2 class="footer-heading2" style="margin-bottom: 10px;">
+                            Resources
+                        </h2>
+                        <ul  class="footer-heading2-child" style="margin-bottom: 8px;">
+                            <li  >
+                                <a href="https://flowbite.com/" class="footer-route">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="footer-route">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="footer-heading2" style="margin-bottom: 10px;">
+                            Follow us
+                        </h2>
+                        <ul  class="footer-heading2-child" style="margin-bottom: 8px;">
+                            <li >
+                                <a href="https://github.com/themesberg/flowbite" class="footer-route">
+                                    Github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/4eeurUVvTy" class="footer-route">
+                                    Discord
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="footer-heading2" style="margin: 10px 0;">
+                            Legal
+                        </h2>
+                        <ul  class="footer-heading2-child" style="margin-bottom: 8px;">
+                            <li >
+                                <a href="#" class="footer-route">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-route">
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="tp-footer-area-two pt-80 pb-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="tp-footer-widget footer-col-1 mb-30 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="tp-footer-info">
-                                <div class="tp-footer-info-logo mb-35">
-                                    <a href="index.html"><img src="assets/img/logo/logo-white.png" class="img-fluid" alt="img not found"></a>
-                                </div>
-                                <h4 class="mb-15"><a href="tel:02(850)2560-3">02 (850) 2560 - 3</a></h4>
-                                <h6 class="mb-15"><i class="fal fa-envelope-open"></i><a href="mailto:info@basictheme.com">info@basictheme.com</a></h6>
-                                <h6 class="mb-20"><i class="fal fa-map-marker-alt"></i> 25/B Globe House Ave. Point Beach, New York</h6>
-                                <div class="tp-footer-info-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-google"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="tp-footer-widget footer-col-2 mb-30 wow fadeInUp" data-wow-delay=".6s">
-                            <h4 class="tp-footer-widget-title mb-35">Our Services</h4>
-                            <ul>
-                                <li><a href="#">Carpet Cleaning</a></li>
-                                <li><a href="#">Plumbing Serivices</a></li>
-                                <li><a href="#">Park Cleaning</a></li>
-                                <li><a href="#">Residential Services</a></li>
-                                <li><a href="#">Toilet Cleaning</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="tp-footer-widget footer-col-3 mb-30 wow fadeInUp" data-wow-delay=".9s">
-                            <h4 class="tp-footer-widget-title mb-35">Recent News</h4>
-                            <div class="tp-footer-news">
-                                <div class="tp-footer-news-single mb-15">
-                                    <h6><a href="blog-details.html">Orci magna pede, quisque sociis integer litora netus</a></h6>
-                                    <span>Jun 02, 2021</span>
-                                </div>
-                                <div class="tp-footer-news-single">
-                                    <h6><a href="blog-details.html">Congue morbi elit dictumst socio sit mauris congue sed.</a></h6>
-                                    <span>Jun 02, 2021</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="tp-footer-widget footer-col-4 mb-30 wow fadeInUp" data-wow-delay="1.2s">
-                            <h4 class="tp-footer-widget-title mb-40">Instagram</h4>
-                            <div class="tp-footer-insta">
-                                <a href="#"><img src="assets/img/footer/footer-insta-1.jpg" class="img-fluid" alt="img not found"></a>
-                                <a href="#"><img src="assets/img/footer/footer-insta-2.jpg" class="img-fluid" alt="img not found"></a>
-                                <a href="#"><img src="assets/img/footer/footer-insta-3.jpg" class="img-fluid" alt="img not found"></a>
-                                <a href="#"><img src="assets/img/footer/footer-insta-4.jpg" class="img-fluid" alt="img not found"></a>
-                                <a href="#"><img src="assets/img/footer/footer-insta-5.jpg" class="img-fluid" alt="img not found"></a>
-                                <a href="#"><img src="assets/img/footer/footer-insta-6.jpg" class="img-fluid" alt="img not found"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tp-copyright-area-two bg-green-light z-index pt-30 pb-30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tp-copyright tp-copyright-two text-center">
-                            <p class="m-0">Copyright ©2021 <span>Theme_pure</span>. All Rights Reserved Copyright</p>
-                        </div>
-                    </div>
+            <hr  class="footer-hr">
+            
+            <div class="footer-bottom" >
+                <span  class="footer-bottom-text">
+                    © 2023
+                    <a href="https://flowbite.com/" class="footer-route">
+                        Flowbite™
+                    </a>
+                    . All Rights Reserved.
+                </span>
+                <div  class="footer-bottom-icons">
+                    <a href="#"  class="footer-icon-link">
+                        <svg  class="footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#"  class="footer-icon-link">
+                        <svg  class="footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#"  class="footer-icon-link">
+                        <svg  class="footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="#"  class="footer-icon-link">
+                        <svg  class="footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                    <a href="#"  class="footer-icon-link">
+                        <svg  class="footer-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Dribbble account</span>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-
+    <!-- footer  -->
 
     <!-- JS here -->
+
+    <script>
+      function serviceFun() {
+        let dropdown = document.getElementById("nav-dropdown-id");
+        if (dropdown.style.display == "none") {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      }
+      function mobServiceFun() {
+        let dropdown = document.getElementById("mob-nav-dropdown-id");
+        if (dropdown.style.display == "none") {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      }
+      function mobNavFun() {
+        let dropdown = document.getElementById("mob-nav-container-id");
+        if (dropdown.style.display == "none") {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      }
+    </script>
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.js"></script>
@@ -635,6 +1009,5 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
